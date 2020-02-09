@@ -20,6 +20,15 @@ public class Test : MonoBehaviour {
             //配列の中身を表示する
             Debug.Log(array[j]);
         }
+
+            Boss lastboss = new Boss();
+
+            lastboss.Attack();
+            for (int i = 0; i < 10; i++)
+            {
+                lastboss.Attack();
+            }
+            lastboss.Attack();
     }
     
     
@@ -50,18 +59,3 @@ public class Boss
 
 }
 
-public class Test2 : MonoBehaviour
-{
-    void Start()
-    {
-        Boss lastboss = new Boss();
-
-        lastboss.Attack();
-        for(int i=0; i<10; i++)
-        {
-            lastboss.Attack();
-        }
-        lastboss.Attack();
-
-    }
-}
