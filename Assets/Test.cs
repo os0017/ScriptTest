@@ -21,14 +21,14 @@ public class Test : MonoBehaviour {
             Debug.Log(array[j]);
         }
 
-            Boss lastboss = new Boss();
+        Boss lastboss = new Boss();
 
+        lastboss.Attack();
+        for (int i = 0; i < 10; i++)
+        {
             lastboss.Attack();
-            for (int i = 0; i < 10; i++)
-            {
-                lastboss.Attack();
-            }
-            lastboss.Attack();
+        }
+        lastboss.Attack();
     }
     
     
